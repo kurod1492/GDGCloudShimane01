@@ -5,7 +5,7 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/bionic64"
   config.vm.network "private_network", ip: "192.168.33.10"
-  # v1: Ruby をインストール
+  # v1: rbenv をインストール
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
     apt-get install -y build-essential libssl-dev
@@ -24,7 +24,7 @@ Vagrant.configure("2") do |config|
 
   SHELL
 
-  # v2: install ruby by rbenv
+  # v2: Ruby 2.6.5 をインストール
   config.vm.provision "shell", privileged: false, inline: <<-SHELL
   
     if [ -e .rbenv/bin/rbenv ]
@@ -32,9 +32,9 @@ Vagrant.configure("2") do |config|
       export PATH="$HOME/.rbenv/bin:$PATH"
       eval "$(rbenv init -)"
 
-      rbenv install -s 2.6.4
+      rbenv install -s 2.6.5
       rbenv rehash
-      rbenv global 2.6.4
+      rbenv global 2.6.5
     fi
   SHELL
 
