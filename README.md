@@ -28,7 +28,7 @@ Rails アプリを作成し Google Cloud Platform (GCP) の Cloud Run へデプ�
 4. vagrant up の実行
 5. GCP プロジェクト作成
 6. vagrant ssh を実行
-7. DNS 設定
+7. 名前解決の設定
 8. Rails をインストール
 9. Node.js のインストール
 10. Yarn のインストール
@@ -41,6 +41,7 @@ Rails アプリを作成し Google Cloud Platform (GCP) の Cloud Run へデプ�
 17. config/environments/production.rb の設定変更
 18. ローカルで動作確認
 19. Production 環境の DB 設定
+20. Dockerfile の作成
 21. Docker イメージの作成
 22. タグ付け
 23. Google Cloud SDK のインストール
@@ -58,7 +59,7 @@ Rails アプリを作成し Google Cloud Platform (GCP) の Cloud Run へデプ�
 35. Docker イメージを Cloud Run へデプロイ
 36. ブラウザでアクセス
 37. 後始末
-A. 参考
+38. 参考文献
 
 ## 1. VirtualBox のインストール
 
@@ -286,7 +287,7 @@ config/database.yml を修正します。
       database: sample
 
 
-# 20. Dockerfile の作成
+## 20. Dockerfile の作成
 
 Rails アプリケーションを起動する Docker コンテナを作成するため、Dockerfile を作成します。
 Dockerfile を作成する場所は ~/rails-cloud-run-sample にします。
@@ -574,7 +575,7 @@ GCP のプロジェクトをシャットダウンすると、デプロイした�
 表示されているプロジェクト名を確認し、間違いなければ「シャットダウン」をクリックします。
 画面の指示に従ってシャットダウンします。
 
-## A. 参考文献
+## 38. 参考文献
 
 以下の記事を参考にしました。ありがとうございます。
 
