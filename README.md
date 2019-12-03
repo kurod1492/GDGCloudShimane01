@@ -129,8 +129,8 @@ GCP に新しいプロジェクトを作成します。
 ## 6. vagrant ssh を実行
 
 「4. vagrant up の実行」が完了したら、vagrant ssh を実行して VM の中の Ubuntu にログインします。
-ログインすると「vagrant@ubuntu-bionic:~$」というプロンプトが表示されます。
-以後、「vagrant@ubuntu-bionic:~$」は VM の中で実行することを表します。
+ログインすると`vagrant@ubuntu-bionic:~$`というプロンプトが表示されます。
+以後、`vagrant@ubuntu-bionic:~$`は VM の中で実行することを表します。
 
 ```
 $ vagrant ssh
