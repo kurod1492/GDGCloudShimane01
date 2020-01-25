@@ -83,6 +83,9 @@ Rails アプリを作成し Google Cloud Platform (GCP) の Cloud Run へデプ�
 今回 Windows 上のコマンドは git for windows に含まれる Git Bash を使用しました。
 「$」のプロンプトは Git Bash のコマンドです。
 
+    $ mkdir /c/GDGCloudShimane
+    $ vi Vagrantfile
+
 Vagrantfile の内容はこちら→
 [Vagrantfile](https://github.com/kurod1492/GDGCloudShimane01/blob/master/Vagrantfile)
 
@@ -96,10 +99,6 @@ vagrant up 時に
 
 (v3 については https://qiita.com/win-chanma/items/0ef2e68bff2a33cca0e6 を参考にしました）
 
-```
-$ mkdir /e/GDGCloudShimane
-$ vi Vagrantfile
-```
 
 ## 4. vagrant up の実行
 
